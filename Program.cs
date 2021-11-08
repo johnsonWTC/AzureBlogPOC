@@ -25,7 +25,7 @@ namespace AzureBlogPOC
         {
             public static async Task UploadBlob()
             {
-                var connectionString = "DefaultEndpointsProtocol=https;AccountName=cvportaltest;AccountKey=yYsdmZrNMiJGpVzlwwXNU8Bu1X9b3AuCUo0wuf5lLHQ4e1FilYNonG3pUYtMGl40HFXRWypU4LnMyWERLPkbkA==;EndpointSuffix=core.windows.net";
+               var connectionString = "";
                 string containerName = "videos";
                 var serviceClient = new BlobServiceClient(connectionString);
                 var containerClient = serviceClient.GetBlobContainerClient(containerName);
